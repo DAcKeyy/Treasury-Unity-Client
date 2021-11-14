@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca68c7d274b4f2c8c9272b543ed3dc8, type: 3}
+  m_Name: Skeleton Archer
+  m_EditorClassIdentifier: 
+  hp: 100
+  coins: 30
+  characterType: 2
+  weaponData: {fileID: 11400000, guid: 908cd37c1c9efb543bb03cbb417a5fa3, type: 2}
