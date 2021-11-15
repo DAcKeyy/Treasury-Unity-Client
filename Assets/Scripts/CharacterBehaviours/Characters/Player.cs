@@ -9,20 +9,27 @@ namespace CharacterBehaviours
 
         private void FixedUpdate()
         {
-            _characterView.Walk(!Pointer.isCalm);
+            CharacterView.Walk(!Pointer.isCalm);
             if(!Pointer.isCalm) GoToPoint(Pointer.transform.position);
         }
         
         public override void AttackTargets(Transform[] targets)
         {
-            if(targets.Length == 0) return;
-            if(_characterView.IsWallking) return;
+            if (targets.Length == 0)
+            {
+                CharacterView.ShootTarget = null;
+                return;
+            }
+            
+            if(CharacterView.IsWallking) return;
             
             var target = GetClosestTransform(targets);
             transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
+
+            CharacterView.ShootTarget = target;
             
-            if(_characterView.IsAttacking == false) 
-                _characterView.Attack();
+            if(CharacterView.IsAttacking == false) 
+                CharacterView.Attack();
         }
     }
 } 

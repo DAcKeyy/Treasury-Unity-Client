@@ -26,6 +26,11 @@ namespace Weapons
         void Hide();
     }
 
+    public interface IAutoAimable
+    {
+        public Vector3 Target { get; set; }
+    }
+    
     public interface IChargeable
     {
         void Charge();

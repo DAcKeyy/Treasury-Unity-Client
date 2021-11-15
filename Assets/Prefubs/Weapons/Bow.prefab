@@ -314,14 +314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a448ede03dbe42e192eecdf00dd52083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSettings: {fileID: 0}
-  shootSound: {fileID: 0}
-  reloadSound: {fileID: 0}
-  switchModeSound: {fileID: 0}
-  pickUpSound: {fileID: 0}
-  weaponMode: 0
-  animator: {fileID: 0}
+  weaponData: {fileID: 0}
   _arrow: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &2725589845934630611
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,14 +796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a448ede03dbe42e192eecdf00dd52083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSettings: {fileID: 11400000, guid: 908cd37c1c9efb543bb03cbb417a5fa3, type: 2}
-  shootSound: {fileID: 0}
-  reloadSound: {fileID: 0}
-  switchModeSound: {fileID: 0}
-  pickUpSound: {fileID: 0}
-  weaponMode: 0
-  animator: {fileID: 2240162329220521872}
+  weaponData: {fileID: 11400000, guid: 908cd37c1c9efb543bb03cbb417a5fa3, type: 2}
   _arrow: {fileID: 8770502943997945460}
+  animator: {fileID: 2240162329220521872}
 --- !u!1 &8021881375633337059
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b225589ec7684248b9f5a6f424455a9d, type: 3}
   m_Name: Room IDK
   m_EditorClassIdentifier: 
-  enemies: []
+  enemies:
+  - {fileID: 4739434116140404996, guid: 1dfa879aca6cc3b4ea13dd0a0290c5d3, type: 3}
+  - {fileID: 4739434116140404996, guid: 1dfa879aca6cc3b4ea13dd0a0290c5d3, type: 3}
+  - {fileID: 4739434116140404996, guid: 1dfa879aca6cc3b4ea13dd0a0290c5d3, type: 3}
+  - {fileID: 4739434116140404996, guid: 1dfa879aca6cc3b4ea13dd0a0290c5d3, type: 3}
   RoomLenght: 45

@@ -41,9 +41,9 @@ GameObject:
   - component: {fileID: 4739434116140405016}
   - component: {fileID: 4739434116140405018}
   - component: {fileID: 4739434116140405017}
-  - component: {fileID: 4739434116140405019}
   - component: {fileID: 4739434116140404996}
   - component: {fileID: 6786487205857976301}
+  - component: {fileID: 3711603764195479168}
   m_Layer: 6
   m_Name: Skeleton Archer
   m_TagString: Untagged
@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4739434116140404997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 3, z: 32}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4739434116271043278}
@@ -109,20 +109,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   visableTargets: []
---- !u!114 &4739434116140405019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4739434116140404997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c892e26c773b0244a2be9e3d33f8542, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 4739434115283885208}
-  hand: {fileID: 4739434116055990637}
 --- !u!114 &4739434116140404996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterData: {fileID: 11400000, guid: be88a1039e76ed24b8c1f2ad1d3d4664, type: 2}
+  CharacterView: {fileID: 7114989811672085513}
   patrollingRateTime: 5
 --- !u!136 &6786487205857976301
 CapsuleCollider:
@@ -151,6 +138,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &3711603764195479168
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739434116140404997}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4739434116271043279
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +204,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7114989811672085513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5549758443294826954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c892e26c773b0244a2be9e3d33f8542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4739434115283885208}
+  hand: {fileID: 4739434116055990637}
 --- !u!1001 &4739434115283885211
 PrefabInstance:
   m_ObjectHideFlags: 0

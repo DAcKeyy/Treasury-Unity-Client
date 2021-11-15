@@ -13,7 +13,7 @@ namespace Data
     {
         public BlockModel.BlockType[,] RoomGrid = new BlockModel.BlockType[25,11];
         public List<Character> enemies = new List<Character>(); 
-        [Range(10,100)]public int RoomLenght = 10;
+        [Range(10,100)] public int RoomLenght = 10;
         
         #region Editor
         [CustomEditor(typeof(RoomSettings))]

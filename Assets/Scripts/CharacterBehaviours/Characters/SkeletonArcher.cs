@@ -4,9 +4,6 @@ using UnityEngine.AI;
 
 namespace CharacterBehaviours
 {
-    [RequireComponent(typeof(CharacterVision))]
-    [RequireComponent(typeof(NavMeshAgent))]
-    [RequireComponent(typeof(CharacterView))]
     public class SkeletonArcher : Character, IAI
     {
         [SerializeField] private float patrollingRateTime = 1f;
@@ -20,22 +17,29 @@ namespace CharacterBehaviours
 
         private void FixedUpdate()
         {
-            _characterView.Walk(thisAgent.remainingDistance > 0.1f);
-            isPatrolling = isCalm;
+            CharacterView.Walk(ThisAgent.remainingDistance > 0.1f);
+            isPatrolling = IsCalm;
         }
-        
+
         public override void AttackTargets(Transform[] targets)
         {
-            if(targets.Length == 0) return;
-            
-            thisAgent.isStopped = true;
-            _characterView.Walk(false);
+            if (targets.Length == 0)
+            {
+                CharacterView.ShootTarget = null;
+                return;
+            }
 
+            if (CharacterView.IsWallking) return;
+            ThisAgent.isStopped = true;
+            CharacterView.Walk(false);
+            ThisAgent.ResetPath();
             var target = GetClosestTransform(targets);
             transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
-            
-            if(_characterView.IsAttacking == false) 
-                _characterView.Attack();
+
+            CharacterView.ShootTarget = target;
+
+            if (CharacterView.IsAttacking == false)
+                CharacterView.Attack();
         }
 
         IEnumerator GetRandomPoint()
@@ -55,7 +59,7 @@ namespace CharacterBehaviours
         public void Patrolling()
         {
             var walkRadius = 5;
-            thisAgent.isStopped = false;
+            ThisAgent.isStopped = false;
             Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
             randomDirection += transform.position;
             NavMeshHit hit;

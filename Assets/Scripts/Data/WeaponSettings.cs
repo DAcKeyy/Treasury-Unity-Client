@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Weapons;
 
 namespace Data
 {
@@ -11,8 +12,8 @@ namespace Data
         public int damage;
         public float speedMultiplier;
         public WeaponType type;
-        public GameObject prefub;
-        
+        public Weapon Weapon;
+
         public enum WeaponType
         {
             Sword = 0,

@@ -8,6 +8,7 @@ TagManager:
   - Enemy Spawn Point
   - Handle
   - Hand
+  - Arrow
   layers:
   - Default
   - TransparentFX

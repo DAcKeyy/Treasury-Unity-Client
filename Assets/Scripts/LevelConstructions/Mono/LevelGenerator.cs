@@ -14,11 +14,14 @@ namespace LevelConstructions
         private GameObject roomParrent;
         private RoomModel room;
         
-        public void Generate(RoomSettings settings)
+        public (Transform playerSpawnPoint, List<Transform> EnemysSpawnPoints) Generate(RoomSettings settings)
         {
+            var EnemysSpawnPoints = new List<Transform>();
+            var PlayerSpawnPoint = transform;
+            
             if (Blocks.Count > 0) { 
                 Debug.Log("Комната уже создана в памяти скрипта");
-                return;
+                return (null, null);
             }
             
             room = new RoomModel(settings);
@@ -81,7 +84,7 @@ namespace LevelConstructions
                             parent = SpawnPointsParrent.transform,
                             position = blockModel.Position
                         }};
-                    
+                    PlayerSpawnPoint = spawnPointPlayer.transform;
                     spawnPointPlayer.name += $" ID:{iterator}";
                 }
                 if (blockModel.blockType == BlockModel.BlockType.SpawnPoint_Enemy)
@@ -92,6 +95,8 @@ namespace LevelConstructions
                             parent = SpawnPointsParrent.transform,
                             position = blockModel.Position
                         }};
+                    
+                    EnemysSpawnPoints.Add(spawnPointEnemy.transform);
                     
                     spawnPointEnemy.name += $" ID:{iterator}";
                 }
@@ -115,6 +120,8 @@ namespace LevelConstructions
 
             var meshSurface = roomParrent.AddComponent<NavMeshSurface>();
             meshSurface.BuildNavMesh();
+
+            return (PlayerSpawnPoint, EnemysSpawnPoints);
         }
         
         public BlockBehaviour InstantiateBlock(BlockModel blockModel, Transform parrent)

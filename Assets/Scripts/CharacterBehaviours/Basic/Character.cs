@@ -1,41 +1,57 @@
+using System;
 using System.Collections;
 using Data;
 using UnityEngine;
 using UnityEngine.AI;
+using Weapons;
 
 namespace CharacterBehaviours
 {
+    [RequireComponent(typeof(CapsuleCollider))]
     [RequireComponent(typeof(CharacterVision))]
     [RequireComponent(typeof(NavMeshAgent))]
-    [RequireComponent(typeof(CharacterView))]
     public class Character : MonoBehaviour, ICharacter
     {
+        public Action<int> HealthChanged = delegate(int i) {  };
+        public Action<Character> Died = delegate {  };
         public CharacterSettings CharacterData;
-        protected NavMeshAgent thisAgent;
-        protected CharacterView _characterView;
-        protected CharacterVision _characterVision;
-        protected bool isCalm;
-
+        protected NavMeshAgent ThisAgent;
+        [SerializeField]
+        protected CharacterView CharacterView;
+        protected CharacterVision CharacterVision;
+        protected bool IsCalm;
+        private int health;
+        
         public virtual void Start()
         {
-            isCalm = true;
-            thisAgent = GetComponent<NavMeshAgent>();
+            IsCalm = true;
+            ThisAgent = GetComponent<NavMeshAgent>();
             
-            _characterView = GetComponent<CharacterView>();
-            _characterView.Setup(CharacterData.weaponData);
-            
-            _characterVision = GetComponent<CharacterVision>();
-            _characterVision.TargetFounded += AttackTargets;
+            CharacterView.Setup(CharacterData.weaponData);
+            health = CharacterData.hp;
+            CharacterVision = GetComponent<CharacterVision>();
+            CharacterVision.TargetFounded += AttackTargets;
 
             StartCoroutine(CheckTargets());
+        }
+
+        public void OnCollisionEnter(Collision other)
+        {
+            Debug.Log(other.gameObject.tag);
+            if (other.gameObject.tag == "Arrow")
+            {
+                health -= other.gameObject.GetComponent<Arrow>().Damage;
+                HealthChanged(health);
+                if(health < 0) Die();
+            }
         }
 
         private IEnumerator CheckTargets()
         {
             while (true)
             {
-                if (_characterVision.visableTargets.Count == 0) isCalm = true;
-                else isCalm = false;
+                if (CharacterVision.visableTargets.Count == 0) IsCalm = true;
+                else IsCalm = false;
                 
                 yield return new WaitForFixedUpdate();
             }
@@ -48,7 +64,7 @@ namespace CharacterBehaviours
 
         public void GoToPoint(Vector3 point)
         {
-            thisAgent.SetDestination(point);
+            ThisAgent.SetDestination(point);
         }
 
         public void TakeDamage(int damageValue)
@@ -60,6 +76,7 @@ namespace CharacterBehaviours
         {
             //Poooff aniamtion!
             //Drop Coins
+            Died(this);
             Destroy(gameObject);
         }
 
@@ -83,5 +100,7 @@ namespace CharacterBehaviours
 
             return closestTarget;
         }
+        
+        
     }
 }

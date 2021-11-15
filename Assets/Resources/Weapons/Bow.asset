@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bow
   damage: 30
+  speedMultiplier: 1
   type: 2
-  prefub: {fileID: 7726876500969850929, guid: ffec2c4016aed454ab72a213a19f3345, type: 3}
+  Weapon: {fileID: 6337326829596632315, guid: ffec2c4016aed454ab72a213a19f3345, type: 3}
