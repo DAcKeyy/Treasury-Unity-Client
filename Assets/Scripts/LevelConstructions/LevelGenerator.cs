@@ -7,28 +7,34 @@ using Object = System.Object;
 
 namespace LevelConstructions
 {
-    public class LevelGenerator : MonoBehaviour
+    public class LevelGenerator
     {
-        [SerializeField] private BlockBehaviour Block = null;
+        private BlockBehaviour Block;
         private List<BlockBehaviour> Blocks = new List<BlockBehaviour>();
         private GameObject roomParrent;
         private RoomModel room;
+
+        public LevelGenerator(BlockBehaviour blockObject)
+        {
+            Block = blockObject;
+        }
         
         public (Transform playerSpawnPoint, List<Transform> EnemysSpawnPoints) Generate(RoomSettings settings)
         {
-            var EnemysSpawnPoints = new List<Transform>();
-            var PlayerSpawnPoint = transform;
-            
+
             if (Blocks.Count > 0) { 
                 Debug.Log("Комната уже создана в памяти скрипта");
                 return (null, null);
             }
-            
             room = new RoomModel(settings);
+            
 
             roomParrent = new GameObject("Room") {
                 transform = { position = new Vector3(0,0,0)}
             };
+            
+            var EnemysSpawnPoints = new List<Transform>();
+            var PlayerSpawnPoint = roomParrent.transform;
             
             var WallsParrent = new GameObject("Wall") {
                 transform = { parent = roomParrent.transform }
@@ -126,7 +132,7 @@ namespace LevelConstructions
         
         public BlockBehaviour InstantiateBlock(BlockModel blockModel, Transform parrent)
         {
-            var cube = Instantiate(Block, blockModel.Position, Quaternion.identity, parrent);
+            var cube = GameObject.Instantiate(Block, blockModel.Position, Quaternion.identity, parrent);
             
             cube.name = blockModel.blockType + " block";
             
@@ -188,41 +194,15 @@ namespace LevelConstructions
             {
 #if UNITY_EDITOR
                 if(block == null) continue;
-                DestroyImmediate(block.gameObject);
-                DestroyImmediate(roomParrent);
+                GameObject.DestroyImmediate(block.gameObject);
+                GameObject.DestroyImmediate(roomParrent);
 #else
-                Destroy(block.gameObject);
-                Destroy(roomParrent);
+                GameObject.Destroy(block.gameObject);
+                GameObject.Destroy(roomParrent);
 #endif
             }
             
             Blocks.Clear();
         }
     }
-
-    #region Editor
-    [CustomEditor(typeof(LevelGenerator))]
-    public class LevelGeneratorEditor : Editor
-    {
-        private LevelGenerator _levelGenerator;
-        private RoomSettings roomSettings;
-        [SerializeField] private RoomSettings sadasd;
-        public void OnEnable()
-        {
-            _levelGenerator = (LevelGenerator)target;
-        }
-
-        public override void OnInspectorGUI()
-        {
-            base.OnInspectorGUI();
-
-            roomSettings = (RoomSettings)EditorGUILayout.ObjectField("Объект данных комнаты", roomSettings, typeof(RoomSettings), true);
-            
-            if (GUILayout.Button("Создать комнату"))
-                _levelGenerator.Generate(roomSettings);
-            if (GUILayout.Button("Уничтожить комнату"))
-                _levelGenerator.Destroy();
-        }
-    }
-    #endregion
 }

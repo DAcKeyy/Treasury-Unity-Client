@@ -40,7 +40,7 @@ public class CharacterView : MonoBehaviour
 
     public void TakeDamage()
     {
-        //_animator.SetTrigger("Take Damage");
+        animator.SetTrigger("Take Damage");
     }
 
     public void Shoot()

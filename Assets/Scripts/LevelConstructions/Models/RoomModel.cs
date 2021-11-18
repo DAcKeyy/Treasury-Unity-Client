@@ -14,7 +14,7 @@ namespace LevelConstructions
             var height = 5;
             var width = 11;
 
-            BlockSpace = new BlockModel[width + walls, height, settings.RoomLenght + walls];
+            BlockSpace = new BlockModel[width + walls, height, settings.roomLenght + walls];
             
             InitBlockSpace(ref BlockSpace);
             CreateBorders(ref BlockSpace);

@@ -1,4 +1,6 @@
 using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using UnityEngine;
 
 namespace LevelConstructions
@@ -6,10 +8,12 @@ namespace LevelConstructions
     [Serializable]
     public struct BlockModel
     {
-        public string Name { get; set; }
-        public BlockType blockType { get; set; }
-        public Vector3 Position { get; set; }
+        public string Name;
+        public BlockType blockType;
+        public Vector3 Position;
         
+        [Serializable]
+        [JsonConverter(typeof(StringEnumConverter))]
         public enum BlockType
         {
             Empty,

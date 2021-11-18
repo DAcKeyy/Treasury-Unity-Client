@@ -12,6 +12,7 @@ namespace Weapons
 
         public void Fly(Vector3 destanation)
         {
+            transform.LookAt(destanation);
             StartCoroutine(FlyCoroutine());
         }
 
