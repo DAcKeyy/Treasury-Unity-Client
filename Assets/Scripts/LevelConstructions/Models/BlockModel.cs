@@ -1,6 +1,4 @@
 using System;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using UnityEngine;
 
 namespace LevelConstructions
@@ -13,7 +11,6 @@ namespace LevelConstructions
         public Vector3 Position;
         
         [Serializable]
-        [JsonConverter(typeof(StringEnumConverter))]
         public enum BlockType
         {
             Empty,
