@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using CharacterBehaviours;
 using LevelConstructions;
 using UnityEditor;
 using UnityEngine;
@@ -20,7 +19,7 @@ namespace Data
             set => roomGridBinary = ToByteArray(value);
         }
         
-        public List<Character> enemies = new List<Character>();
+        public List<Character.Basic.Character> enemies = new List<Character.Basic.Character>();
         
         [Range(10,100)] 
         public int roomLenght = 10;

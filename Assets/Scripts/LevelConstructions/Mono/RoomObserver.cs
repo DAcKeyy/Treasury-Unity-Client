@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using CharacterBehaviours;
+using Character.Characters;
 using Data;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
-namespace LevelConstructions
+namespace LevelConstructions.Mono
 {
     public class RoomObserver : MonoBehaviour
     {
-        [SerializeField] private BlockBehaviour Block;
+        [SerializeField] private BlockBehaviour block;
         [SerializeField] private Player player;
         public Action StageClear = delegate {  };
         public Action GameOver = delegate {  };
-        private LevelGenerator levelGenerator;
-        private List<Character> Enemys = new List<Character>();
-        
+        private LevelGenerator _levelGenerator;
+        private List<Character.Basic.Character> Enemys = new List<Character.Basic.Character>();
+          
         private void Awake()
         {
             Init();
@@ -26,7 +26,7 @@ namespace LevelConstructions
 
         public void Init()
         {
-            levelGenerator = new LevelGenerator(Block);
+            _levelGenerator = new LevelGenerator(block);
             player.Died += character => { GameOver(); };
         }
 
@@ -37,21 +37,20 @@ namespace LevelConstructions
             if(rooms.Length == 0) return;
             
             var room = rooms[Random.Range(0, rooms.Length -1)];
-            var points = levelGenerator.Generate(room);
-            
-            player.transform.position = new Vector3(points.playerSpawnPoint.position.x, 
-                                                    points.playerSpawnPoint.position.y, 
-                                                    points.playerSpawnPoint.position.z);
+            var points = _levelGenerator.Generate(room);
+
+            var position = points.playerSpawnPoint.position;
+            player.transform.position = new Vector3(position.x, position.y, position.z);
 
             for(int i = 0; i < room.enemies.Count; i++)
             {
                 var enemy = Instantiate(room.enemies[i], points.EnemysSpawnPoints[i]);
-                enemy.Died += CharactrerDies;
+                enemy.Died += CharacterDies;
                 Enemys.Add(enemy);
             }
         }
 
-        public void CharactrerDies(Character died)
+        private void CharacterDies(Character died)
         {
             Enemys.Remove(died);
             if (Enemys.Count == null) StageClear();

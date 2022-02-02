@@ -1,5 +1,4 @@
 ﻿using System;
-using CharacterBehaviours;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +8,13 @@ namespace UI
     {
         [SerializeField] private Counter hpCounter;
         [SerializeField] private Slider hpSlider;
-        [SerializeField] private Character owner;
+        [SerializeField] private Character.Basic.Character owner;
         private int maxHp;
         private int hp;
 
         public void Start()
         {
-            Init(owner.CharacterData.hp);
+            Init(owner.characterData.hp);
             owner.HealthChanged += delegate(int i) { TakeDamage(hp - i);};
         }
         

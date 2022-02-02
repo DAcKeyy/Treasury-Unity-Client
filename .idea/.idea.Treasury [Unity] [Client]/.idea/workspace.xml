@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f7a1a48-f738-4f3f-afa8-4fa21b3bbabb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/CharacterVision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Aniamtions/Bow/Bow Charge Arrow.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Aniamtions/Bow/Bow Charge Arrow.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Aniamtions/Bow/Bow Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Aniamtions/Bow/Bow Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Archer.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Archer.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Bow.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/Bow.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/SkeletonArcher.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/SkeletonArcher.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Attack Draw Arrow.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Attack Draw Arrow.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Attack Magic.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Attack Magic.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Attack Sword And Shield.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Attack Sword And Shield.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Run Forward WithBow.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Run Forward WithBow.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Run Forward WithMagic.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Run Forward WithMagic.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Run Sword And Shield.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Animations/Run Sword And Shield.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Archer@Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Archer@Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Blend/source/Archer_001.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Blend/source/Archer_001.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Blend/source/Archer_001.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Blend/source/Archer_001.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Blend/textures/archer1_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Archer/Blend/textures/archer1_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Arrow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Arrow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Bow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Bow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Crystal.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Crystal.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Quiver.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/Quiver.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/leafs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/Materials/leafs.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/source/Stylized Forest Bow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/source/Stylized Forest Bow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/source/bow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/source/bow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Emissive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Arrow_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Bow_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Bow_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Bow_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Bow_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Bow_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Bow_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_Emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_Emissive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Crystal_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Bow_Low__Quiver_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/Leaves_leafs_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/internal_ground_ao_texture.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bow/textures/internal_ground_ao_texture.jpeg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Shooting Arrow.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Shooting Arrow.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Standing Walk Forward.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Standing Walk Forward.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Sword And Shield Attack.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Sword And Shield Attack.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Sword And Shield Slash.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/Animations/Sword And Shield Slash.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton BLEND/source/skeleton.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton BLEND/source/skeleton.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton BLEND/source/skeleton.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton BLEND/source/skeleton.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton BLEND/textures/wizardTowerDiff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton BLEND/textures/wizardTowerDiff.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton@Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/skeleton@Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/smartgit-win-21_1_3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Skeleton/smartgit-win-21_1_3.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Stones_and_buried_treasure/Stones_and_buried_treasure.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Stones_and_buried_treasure/Stones_and_buried_treasure.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/blend/source/untitled.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/blend/source/untitled.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/blend/textures/Texture.Zombie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/blend/textures/Texture.Zombie.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe@Great Sword Attack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe@Great Sword Attack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe@Walking.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe@Walking.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe@Zombie Attack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zombe/zombe@Zombie Attack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/Materials/anim_obj.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/Materials/anim_obj.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/source/Materials/estetic_props.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/source/Materials/estetic_props.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/source/props_sketch.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/source/props_sketch.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/textures/anim_obj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/textures/anim_obj.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/textures/estetic_props.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowpoly-dungeon-game-props/textures/estetic_props.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioCompressedInMemory.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioCompressedInMemory.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioStreaming.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/AudioStreaming.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AlbedoTexture_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AlbedoTexture_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AudioDecompressOnLoad.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/AudioDecompressOnLoad.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/DirectionalLight_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Defaults/DirectionalLight_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/NormalTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/NormalTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/UtilityTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/UtilityTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/Character.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/Character.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/CharacterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/CharacterView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/CharacterView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/CharacterVision.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/CharacterVision.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/CharacterVision.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/ICharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/ICharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Basic/ICharacter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Basic/ICharacter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Characters/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Characters/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Characters/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Characters/Player.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Characters/SkeletonArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Characters/SkeletonArcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterBehaviours/Characters/SkeletonArcher.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Characters/SkeletonArcher.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/RoomSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RoomSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelConstructions/Mono/RoomObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelConstructions/Mono/RoomObserver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BillBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Billboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BillBoard.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Chest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Chest.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Logo/Chest o' Rupees by Alex Pasquarella.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Logo/Chest o' Rupees by Alex Pasquarella.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Logo/Duck by Kasturi Lal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Logo/Duck by Kasturi Lal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowDownGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowDownGrey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowDownWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowDownWhite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowUpGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowUpGrey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowUpWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_arrowUpWhite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_box.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_boxCheckmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_boxCheckmark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_boxCross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_boxCross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_boxTick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_boxTick.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button00.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button05.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button06.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button07.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button08.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button09.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button10.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button11.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button12.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button13.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button14.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_button15.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_checkmarkGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_checkmarkGrey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_checkmarkWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_checkmarkWhite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_crossGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_crossGrey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_crossWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_crossWhite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_panel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_panel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderDown.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderEnd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderEnd.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderHorizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderHorizontal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderLeft.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderRight.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderUp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderVertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_sliderVertical.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_tickGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_tickGrey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_tickWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/grey_tickWhite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24YkCGwRxyFVaU39oTp4dm6SrNX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f7a1a48-f738-4f3f-afa8-4fa21b3bbabb" name="Changes" comment="" />
+      <created>1643814782720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643814782720</updated>
+      <workItem from="1643814800732" duration="67000" />
+      <workItem from="1643814887272" duration="1969000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
