@@ -8,30 +8,31 @@ namespace LevelConstructions
     {
         public readonly BlockModel[,,] BlockSpace;
 
-        public RoomModel(RoomSettings settings)
+        public RoomModel(RoomData data)
         {
             var walls = 2;
             var height = 5;
-            var width = 11;
 
-            BlockSpace = new BlockModel[width + walls, height, settings.roomLenght + walls];
+            BlockSpace = new BlockModel[
+                data.RoomSize.x + walls, 
+                height, 
+                data.RoomSize.y + walls];
             
             InitBlockSpace(ref BlockSpace);
             CreateBorders(ref BlockSpace);
             CreateExit(ref BlockSpace);
             CreateBasicGround(ref BlockSpace);
-            CreateBarricade(ref BlockSpace, settings);
+            CreateBarricade(ref BlockSpace, data);
             CreatePlayerSpawnpoint(ref BlockSpace);
-            CreateEnemiesSpawnpoint(ref BlockSpace, settings);
+            CreateEnemiesSpawnpoint(ref BlockSpace, data);
         }
 
         public void InitBlockSpace(ref BlockModel[,,] roomSpace)
         {
-            for (int height = 0; height < roomSpace.GetLength(1); height++)
-                for (int width = 0; width < roomSpace.GetLength(0); width++)
+            for (int width = 0; width < roomSpace.GetLength(0); width++)
+                for (int height = 0; height < roomSpace.GetLength(1); height++)
                     for (int lenght = 0; lenght < roomSpace.GetLength(2); lenght++)
                     {
-                        roomSpace[width, height, lenght].blockType = BlockModel.BlockType.Empty;
                         roomSpace[width, height, lenght].Position = new Vector3(width, height, lenght);
                     }
         }
@@ -80,7 +81,7 @@ namespace LevelConstructions
                     }
         }
         
-        public void CreateBarricade(ref BlockModel[,,] roomSpace, RoomSettings roomData)
+        public void CreateBarricade(ref BlockModel[,,] roomSpace, RoomData roomData)
         {
             for(int coordinatesLenght = 0; coordinatesLenght < roomData.RoomGrid.GetLength(0); coordinatesLenght++)
                 for (int coordinatesWight = 0; coordinatesWight < roomData.RoomGrid.GetLength(1); coordinatesWight++)
@@ -108,9 +109,9 @@ namespace LevelConstructions
                     }
         }
 
-        public void CreateEnemiesSpawnpoint(ref BlockModel[,,] roomSpace, RoomSettings settings)
+        public void CreateEnemiesSpawnpoint(ref BlockModel[,,] roomSpace, RoomData data)
         {
-            for (int iterator = 0; iterator < settings.enemies.Count; iterator++)
+            for (int iterator = 0; iterator < data.Enemies.Count; iterator++)
             {
                 var possiblePlaces = new List<BlockModel>();
 

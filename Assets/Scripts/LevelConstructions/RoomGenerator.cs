@@ -7,26 +7,26 @@ using Object = System.Object;
 
 namespace LevelConstructions
 {
-    public class LevelGenerator
+    public class RoomGenerator
     {
         private BlockBehaviour Block;
         private List<BlockBehaviour> Blocks = new List<BlockBehaviour>();
         private GameObject roomParrent;
         private RoomModel room;
 
-        public LevelGenerator(BlockBehaviour blockObject)
+        public RoomGenerator(BlockBehaviour blockObject)
         {
             Block = blockObject;
         }
         
-        public (Transform playerSpawnPoint, List<Transform> EnemysSpawnPoints) Generate(RoomSettings settings)
+        public (Transform playerSpawnPoint, List<Transform> EnemysSpawnPoints) Generate(RoomData data)
         {
 
             if (Blocks.Count > 0) { 
                 Debug.Log("Комната уже создана в памяти скрипта");
                 return (null, null);
             }
-            room = new RoomModel(settings);
+            room = new RoomModel(data);
             
 
             roomParrent = new GameObject("Room") {

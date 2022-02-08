@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{525c68d0-a1d1-c89d-052d-3ba566868743}</ProjectGuid>
+    <ProjectGuid>{0985f425-dc74-1065-2565-0d72e1c7ad81}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -60,18 +60,17 @@
      <Compile Include="Assets\Scripts\EditorTools\GitBranchToProjectVersionExtention.cs" />
      <Compile Include="Assets\Scripts\Weapons\Bow.cs" />
      <Compile Include="Assets\Scripts\Temporary\CubeJobber.cs" />
-     <Compile Include="Assets\Scripts\UI\Billboard.cs" />
      <Compile Include="Assets\Scripts\CameraControls\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Data\CharacterSettings.cs" />
      <Compile Include="Assets\Scripts\Character\Basic\ICharacter.cs" />
      <Compile Include="Assets\Scripts\Character\Characters\SkeletonArcher.cs" />
+     <Compile Include="Assets\Scripts\UI\Billboard.cs" />
      <Compile Include="Assets\Scripts\Weapons\Basic\RangeWeapon.cs" />
      <Compile Include="Assets\Scripts\LevelConstructions\Mono\BlockBehaviour.cs" />
      <Compile Include="Assets\Scripts\Temporary\CubeJobMover.cs" />
      <Compile Include="Assets\Scripts\LevelConstructions\Mono\SideBehaviour.cs" />
-     <Compile Include="Assets\Scripts\LevelConstructions\LevelGenerator.cs" />
      <Compile Include="Assets\Scripts\Character\Characters\Player.cs" />
-     <Compile Include="Assets\Scripts\Data\RoomSettings.cs" />
+     <Compile Include="Assets\Scripts\Data\RoomData.cs" />
      <Compile Include="Assets\Scripts\Temporary\CubeJobData.cs" />
      <Compile Include="Assets\Scripts\Weapons\Arrow.cs" />
      <Compile Include="Assets\Scripts\Character\Basic\CharacterVision.cs" />
@@ -84,6 +83,7 @@
      <Compile Include="Assets\Scripts\Weapons\Basic\Weapon.cs" />
      <Compile Include="Assets\Scripts\Data\WeaponSettings.cs" />
      <Compile Include="Assets\Scripts\Movement\Pointer.cs" />
+     <Compile Include="Assets\Scripts\LevelConstructions\RoomGenerator.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -307,10 +307,13 @@
  <HintPath>C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Burst.Unsafe">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/PackageCache/com.unity.burst@1.4.11/Unity.Burst.Unsafe.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/PackageCache/com.unity.burst@1.4.11/Unity.Burst.Unsafe.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -661,142 +664,142 @@
  <HintPath>C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Burst.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Searcher.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Burst">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.DeviceSimulator.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>C:/Users/Alexander/Projects/Treasury [Unity] [Client]/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>C:/Users/alexa/Projects/Treasury-Unity-Client/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{2c655e1c-5709-da87-5b04-61ae209a214c}</Project>
+      <Project>{ad2a8653-1a4a-de76-2a41-7e71a6295d4d}</Project>
       <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{be0677d3-5081-929f-4ebd-fabc5a02f358}</Project>
+      <Project>{b5998bb3-d352-1c41-748e-105f416215ae}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{0eed57a3-6632-75dd-dff9-1ba984b7dd49}</Project>
+      <Project>{0e3f651f-9fb9-40b3-f24f-832da16e75ba}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{4ae14058-c906-ee89-3115-6e207ffad66e}</Project>
+      <Project>{ade54e01-8412-67d6-41f8-00192b43313a}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="PluginsAssemblyDefinition.csproj">
-      <Project>{608d5b62-d3c9-8955-4b3b-3a36a0e3892f}</Project>
+      <Project>{4caf5260-f042-3f96-4dfa-f81e7375996a}</Project>
       <Name>PluginsAssemblyDefinition</Name>
     </ProjectReference>
   </ItemGroup>

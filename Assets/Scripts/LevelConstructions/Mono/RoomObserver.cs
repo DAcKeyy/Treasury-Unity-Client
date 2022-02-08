@@ -15,7 +15,7 @@ namespace LevelConstructions.Mono
         [SerializeField] private Player player;
         public Action StageClear = delegate {  };
         public Action GameOver = delegate {  };
-        private LevelGenerator _levelGenerator;
+        private RoomGenerator _roomGenerator;
         private List<Character.Basic.Character> Enemys = new List<Character.Basic.Character>();
           
         private void Awake()
@@ -26,31 +26,31 @@ namespace LevelConstructions.Mono
 
         public void Init()
         {
-            _levelGenerator = new LevelGenerator(block);
+            _roomGenerator = new RoomGenerator(block);
             player.Died += character => { GameOver(); };
         }
 
         public void CreateRoom()
         {
-            var rooms = Resources.LoadAll<RoomSettings>("Rooms");
+            var rooms = Resources.LoadAll<RoomData>("Game Data/Rooms");
             Debug.Log(rooms.Length);
             if(rooms.Length == 0) return;
             
             var room = rooms[Random.Range(0, rooms.Length -1)];
-            var points = _levelGenerator.Generate(room);
+            var points = _roomGenerator.Generate(room);
 
             var position = points.playerSpawnPoint.position;
             player.transform.position = new Vector3(position.x, position.y, position.z);
 
-            for(int i = 0; i < room.enemies.Count; i++)
+            for(int i = 0; i < room.Enemies.Count; i++)
             {
-                var enemy = Instantiate(room.enemies[i], points.EnemysSpawnPoints[i]);
+                var enemy = Instantiate(room.Enemies[i], points.EnemysSpawnPoints[i]);
                 enemy.Died += CharacterDies;
                 Enemys.Add(enemy);
             }
         }
 
-        private void CharacterDies(Character died)
+        private void CharacterDies(Character.Basic.Character died)
         {
             Enemys.Remove(died);
             if (Enemys.Count == null) StageClear();
