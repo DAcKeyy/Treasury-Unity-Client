@@ -424,3 +424,164 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 406.764934 seconds.
+  path: Assets/Scenes/IK Test
+  artifactKey: Guid(9f329808a5eb66e45ae3b05ff2699e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IK Test using Guid(9f329808a5eb66e45ae3b05ff2699e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4bf6a57c74380087871f44a0cc5e8e') in 0.013919 seconds 
+  Import took 0.020408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.286108 seconds.
+  path: Assets/Scenes/IK Test/IK Test.unity
+  artifactKey: Guid(4e4b9fba5bf5aa04da57ea8a19f91e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IK Test/IK Test.unity using Guid(4e4b9fba5bf5aa04da57ea8a19f91e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0b94755a2d378a80143393dba63c524') in 0.020805 seconds 
+  Import took 0.026527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.884394 seconds.
+  path: Assets/Resources/3D Models
+  artifactKey: Guid(5e42472a4474be44f8079cb6e85a8c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models using Guid(5e42472a4474be44f8079cb6e85a8c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90aba2b0df32db0ffe6acbb157ddd0d4') in 0.009653 seconds 
+  Import took 0.015469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.726845 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex
+  artifactKey: Guid(27736a93413bb1748bb219977de5b6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex using Guid(27736a93413bb1748bb219977de5b6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f8816ea61f9f8b8a3addaff486ff08') in 0.009813 seconds 
+  Import took 0.015462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.232964 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00aed38b82deb7e66d0812fa3269dc3') in 0.820482 seconds 
+  Import took 0.828027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.389279 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fd6360bc8e833ce63a477cd7974522') in 0.369358 seconds 
+  Import took 0.376395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.297720 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd5ed532983c0a98805cda500ae56d6') in 0.008995 seconds 
+  Import took 0.015048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 460.475173 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095b1393beadbe7e12a40f8b5d3f8e04') in 0.042203 seconds 
+  Import took 0.048427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.686492 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4e6d5f3e5d93c0cb0c259cced8806c') in 0.039020 seconds 
+  Import took 0.045039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.539475 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7eb2011d4178578ffc4be1f870db53b') in 0.045374 seconds 
+  Import took 0.051411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.220752 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25da4c53c5647cb834278a177812089c') in 0.042386 seconds 
+  Import took 0.048227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.057008 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(c7c2ea4932a0f20488e8222ddeab1a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex.fbx using Guid(c7c2ea4932a0f20488e8222ddeab1a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4258723c2975c434c3a313837a1c78dd') in 0.008860 seconds 
+  Import took 0.014908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 321.396214 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66eba174d8fb6a4aa1d15b99fb16128e') in 0.071832 seconds 
+  Import took 0.078297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.352257 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b649e55f540b25188581d6a421f90887') in 0.054564 seconds 
+  Import took 0.060712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.261657 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294329aa5c859c38cdb45f9a5915e63d') in 0.054863 seconds 
+  Import took 0.061504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 577.811366 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbee345a4880921fbb1a1140101a55d') in 0.055801 seconds 
+  Import took 0.062332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.644325 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af18b9d75f9308dd5cbd3f440b02db91') in 0.057736 seconds 
+  Import took 0.063982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.172681 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378958ef169e1633da346c6f482ffa57') in 0.052427 seconds 
+  Import took 0.058666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 167.731087 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a2f25150846553f713f744bbfda2e8') in 0.053413 seconds 
+  Import took 0.059984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.419570 seconds.
+  path: Assets/Resources/3D Models/lowpoly-dungeon-game-props
+  artifactKey: Guid(6aaa714d9e4f3fe40b729b1d8011ee40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/lowpoly-dungeon-game-props using Guid(6aaa714d9e4f3fe40b729b1d8011ee40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af446edb6a2041d4f36d596d7eb3ab4') in 0.008844 seconds 
+  Import took 0.014725 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
