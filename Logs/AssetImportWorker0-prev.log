@@ -15,11 +15,11 @@ C:/Users/Alexander/Projects/Treasury-Unity-Client
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53831
+55026
 Successfully changed project path to: C:/Users/Alexander/Projects/Treasury-Unity-Client
 C:/Users/Alexander/Projects/Treasury-Unity-Client
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 86.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 88.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.25f1 (9b9180224418)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -35,76 +35,76 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity Editors/2020.3.25f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.004062 seconds.
+Registered in 0.002400 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 99.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 83.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.947 seconds
+- Completed reload, in  0.728 seconds
 Domain Reload Profiling:
-	ReloadAssembly (948ms)
-		BeginReloadAssembly (84ms)
+	ReloadAssembly (728ms)
+		BeginReloadAssembly (62ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (743ms)
-			LoadAssemblies (82ms)
+		EndReloadAssembly (578ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
+			SetupTypeCache (174ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (318ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (246ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (100ms)
-				BeforeProcessingInitializeOnLoad (21ms)
-				ProcessInitializeOnLoadAttributes (140ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008588 seconds.
+Registered in 0.005531 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 109.16 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 87.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.421 seconds
+- Completed reload, in  2.099 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3422ms)
-		BeginReloadAssembly (312ms)
+	ReloadAssembly (2100ms)
+		BeginReloadAssembly (171ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (2872ms)
-			LoadAssemblies (262ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1851ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (690ms)
+			SetupTypeCache (388ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (172ms)
-			SetupLoadedEditorAssemblies (1580ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (1108ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (109ms)
-				BeforeProcessingInitializeOnLoad (204ms)
-				ProcessInitializeOnLoadAttributes (1240ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (858ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -113,306 +113,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3745 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 167.0 MB.
-System memory in use after: 167.1 MB.
-
-Unloading 150 unused Assets to reduce memory usage. Loaded Objects now: 4166.
-Total: 7.387600 ms (FindLiveObjects: 0.342000 ms CreateObjectMapping: 0.112900 ms MarkObjects: 6.672200 ms  DeleteObjects: 0.259200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/Character/Basic/Character.cs
-  artifactKey: Guid(01aa2233250c4463b5906e813fa264a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Character/Basic/Character.cs using Guid(01aa2233250c4463b5906e813fa264a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96d1748ebefd64167fa122d8dc6b3c1') in 0.036408 seconds 
-  Import took 0.042144 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007278 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.601 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2601ms)
-		BeginReloadAssembly (154ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (2365ms)
-			LoadAssemblies (122ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (941ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (136ms)
-			SetupLoadedEditorAssemblies (960ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (156ms)
-				ProcessInitializeOnLoadAttributes (776ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3584 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.5 MB.
-System memory in use after: 155.7 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4168.
-Total: 6.902400 ms (FindLiveObjects: 0.350900 ms CreateObjectMapping: 0.111000 ms MarkObjects: 6.335000 ms  DeleteObjects: 0.103800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007098 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.208 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2208ms)
-		BeginReloadAssembly (266ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (99ms)
-		EndReloadAssembly (1780ms)
-			LoadAssemblies (180ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (493ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (913ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (165ms)
-				ProcessInitializeOnLoadAttributes (720ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3584 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.6 MB.
-System memory in use after: 155.7 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4170.
-Total: 11.711400 ms (FindLiveObjects: 0.600100 ms CreateObjectMapping: 0.240600 ms MarkObjects: 10.529200 ms  DeleteObjects: 0.339100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005288 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.856 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1857ms)
-		BeginReloadAssembly (138ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1644ms)
-			LoadAssemblies (116ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (396ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (890ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (141ms)
-				ProcessInitializeOnLoadAttributes (712ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3587 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.7 MB.
-System memory in use after: 155.9 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4181.
-Total: 30.364300 ms (FindLiveObjects: 0.576300 ms CreateObjectMapping: 0.203100 ms MarkObjects: 29.378000 ms  DeleteObjects: 0.204200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010518 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.049 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2050ms)
-		BeginReloadAssembly (202ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (1715ms)
-			LoadAssemblies (186ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (442ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (866ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (143ms)
-				ProcessInitializeOnLoadAttributes (696ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3587 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.7 MB.
-System memory in use after: 155.9 MB.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 165.7 MB.
+System memory in use after: 165.8 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4183.
-Total: 9.318800 ms (FindLiveObjects: 0.457100 ms CreateObjectMapping: 0.121800 ms MarkObjects: 8.631000 ms  DeleteObjects: 0.107400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005521 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.184 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2185ms)
-		BeginReloadAssembly (212ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (75ms)
-		EndReloadAssembly (1823ms)
-			LoadAssemblies (164ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (480ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (93ms)
-			SetupLoadedEditorAssemblies (916ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (170ms)
-				ProcessInitializeOnLoadAttributes (714ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3586 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.7 MB.
-System memory in use after: 155.9 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4185.
-Total: 8.206200 ms (FindLiveObjects: 0.339200 ms CreateObjectMapping: 0.102000 ms MarkObjects: 7.652500 ms  DeleteObjects: 0.111100 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4171.
+Total: 6.519500 ms (FindLiveObjects: 0.322000 ms CreateObjectMapping: 0.110700 ms MarkObjects: 5.952000 ms  DeleteObjects: 0.133400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -426,162 +134,145 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 406.764934 seconds.
-  path: Assets/Scenes/IK Test
-  artifactKey: Guid(9f329808a5eb66e45ae3b05ff2699e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IK Test using Guid(9f329808a5eb66e45ae3b05ff2699e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4bf6a57c74380087871f44a0cc5e8e') in 0.013919 seconds 
-  Import took 0.020408 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.286108 seconds.
-  path: Assets/Scenes/IK Test/IK Test.unity
-  artifactKey: Guid(4e4b9fba5bf5aa04da57ea8a19f91e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IK Test/IK Test.unity using Guid(4e4b9fba5bf5aa04da57ea8a19f91e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0b94755a2d378a80143393dba63c524') in 0.020805 seconds 
-  Import took 0.026527 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.884394 seconds.
-  path: Assets/Resources/3D Models
-  artifactKey: Guid(5e42472a4474be44f8079cb6e85a8c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models using Guid(5e42472a4474be44f8079cb6e85a8c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90aba2b0df32db0ffe6acbb157ddd0d4') in 0.009653 seconds 
-  Import took 0.015469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.726845 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex
-  artifactKey: Guid(27736a93413bb1748bb219977de5b6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex using Guid(27736a93413bb1748bb219977de5b6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f8816ea61f9f8b8a3addaff486ff08') in 0.009813 seconds 
-  Import took 0.015462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.232964 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
-  artifactKey: Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00aed38b82deb7e66d0812fa3269dc3') in 0.820482 seconds 
-  Import took 0.828027 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.389279 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
-  artifactKey: Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(a8cff4dbad59079438177c5264f8ce0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fd6360bc8e833ce63a477cd7974522') in 0.369358 seconds 
-  Import took 0.376395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 182.297720 seconds.
   path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd5ed532983c0a98805cda500ae56d6') in 0.008995 seconds 
-  Import took 0.015048 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd62fa8e238069cc2971cbafd6d48f0') in 0.386503 seconds 
+  Import took 0.392668 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 460.475173 seconds.
+  Time since last request: 20.486502 seconds.
   path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095b1393beadbe7e12a40f8b5d3f8e04') in 0.042203 seconds 
-  Import took 0.048427 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6996a95b5cf409272ce0571c032d9bcc') in 0.048168 seconds 
+  Import took 0.054071 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.686492 seconds.
+  Time since last request: 104.198677 seconds.
   path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4e6d5f3e5d93c0cb0c259cced8806c') in 0.039020 seconds 
-  Import took 0.045039 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97bdf3cfe4f0abf5ca80535513279e2') in 0.029984 seconds 
+  Import took 0.036276 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.539475 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 8.736302 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Materials
+  artifactKey: Guid(d4ba7406efc0d6b45989c0e2e3119cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Materials using Guid(d4ba7406efc0d6b45989c0e2e3119cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a481add718aedc297766af76ecf91d59') in 0.009251 seconds 
+  Import took 0.015644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1613.948225 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7eb2011d4178578ffc4be1f870db53b') in 0.045374 seconds 
-  Import took 0.051411 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d518e227f97bb8eec33a87a5c8c94c7') in 0.048935 seconds 
+  Import took 0.055440 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 107.220752 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 89.163181 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25da4c53c5647cb834278a177812089c') in 0.042386 seconds 
-  Import took 0.048227 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9707ad33966fc767780fd9d080014a2') in 0.046724 seconds 
+  Import took 0.052815 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.057008 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex.fbx
-  artifactKey: Guid(c7c2ea4932a0f20488e8222ddeab1a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex.fbx using Guid(c7c2ea4932a0f20488e8222ddeab1a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4258723c2975c434c3a313837a1c78dd') in 0.008860 seconds 
-  Import took 0.014908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 321.396214 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 12.706358 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66eba174d8fb6a4aa1d15b99fb16128e') in 0.071832 seconds 
-  Import took 0.078297 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3dd636147932c344c879dd59454387e') in 0.050268 seconds 
+  Import took 0.056396 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.352257 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 15.041169 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b649e55f540b25188581d6a421f90887') in 0.054564 seconds 
-  Import took 0.060712 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f30949f74e8b06014a860b508e4b9a1') in 0.048603 seconds 
+  Import took 0.054509 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 88.261657 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 3.471684 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294329aa5c859c38cdb45f9a5915e63d') in 0.054863 seconds 
-  Import took 0.061504 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de55f7fd99fdfc8bb550bd6840ecb10') in 0.046955 seconds 
+  Import took 0.052961 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 577.811366 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 9.130121 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbee345a4880921fbb1a1140101a55d') in 0.055801 seconds 
-  Import took 0.062332 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b51bfc4c37510006d8b6a0cc8da6725e') in 0.046363 seconds 
+  Import took 0.052547 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 75.644325 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 275.048858 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af18b9d75f9308dd5cbd3f440b02db91') in 0.057736 seconds 
-  Import took 0.063982 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12aa0b1077b2a703770efd9bbc277e5') in 0.051907 seconds 
+  Import took 0.058180 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 39.172681 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 3.135708 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378958ef169e1633da346c6f482ffa57') in 0.052427 seconds 
-  Import took 0.058666 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa218dcbec633ca60ca12a400e378ff') in 0.045264 seconds 
+  Import took 0.051152 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 167.731087 seconds.
-  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  Time since last request: 7.691864 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
   artifactKey: Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a2f25150846553f713f744bbfda2e8') in 0.053413 seconds 
-  Import took 0.059984 seconds .
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(e362fb901634f6a409d38465780ad3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82116cc8c0db56825f25404f057edbe') in 0.046581 seconds 
+  Import took 0.052514 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.419570 seconds.
-  path: Assets/Resources/3D Models/lowpoly-dungeon-game-props
-  artifactKey: Guid(6aaa714d9e4f3fe40b729b1d8011ee40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Models/lowpoly-dungeon-game-props using Guid(6aaa714d9e4f3fe40b729b1d8011ee40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af446edb6a2041d4f36d596d7eb3ab4') in 0.008844 seconds 
-  Import took 0.014725 seconds .
+  Time since last request: 4329.693164 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx
+  artifactKey: Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character by alicewithalex.fbx using Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04d8a433e1af2d87ae0ae3b0033dae1') in 0.069434 seconds 
+  Import took 0.076064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.961103 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
+  artifactKey: Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13079358713d3d161770242e7ae6ca04') in 0.055096 seconds 
+  Import took 0.061209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.827305 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
+  artifactKey: Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e711e66116a69fc8230d6fedfbf6d09') in 0.049668 seconds 
+  Import took 0.055869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 586.703787 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
+  artifactKey: Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5802df80abb4ca5b95d0ca612cb78f66') in 0.054790 seconds 
+  Import took 0.061705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.990164 seconds.
+  path: Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx
+  artifactKey: Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Models/Low Poly Male Character by alicewithalex/Low Poly Male Character.fbx using Guid(863da1d86efe0f34e8a849a806a0c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44962bd2bab1199116cd957a6751f9a') in 0.056591 seconds 
+  Import took 0.063722 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
