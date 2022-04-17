@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace LevelConstructions
+namespace Treasury.LevelConstructions.Models
 {
     [Serializable]
     public struct BlockModel

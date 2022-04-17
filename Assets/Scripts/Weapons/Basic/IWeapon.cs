@@ -1,7 +1,7 @@
-using Data;
+using Treasury.Data;
 using UnityEngine;
 
-namespace Weapons
+namespace Treasury.Weapons.Basic
 {
     public interface IReloadable
     {

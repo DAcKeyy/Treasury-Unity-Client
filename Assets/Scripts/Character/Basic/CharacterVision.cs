@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Character.Basic
+namespace Treasury.Character.Basic
 {
     public class CharacterVision : MonoBehaviour
     {

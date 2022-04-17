@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using Object = System.Object;
 
-namespace LevelConstructions
+namespace Treasury.LevelConstructions.Mono
 {
     public class BlockBehaviour : MonoBehaviour
     {

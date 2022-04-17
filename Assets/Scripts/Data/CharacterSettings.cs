@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Data
+namespace Treasury.Data
 {
     [CreateAssetMenu(fileName = "New Character", menuName = "Game/Character")]
     [Serializable]

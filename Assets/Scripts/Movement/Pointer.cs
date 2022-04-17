@@ -1,8 +1,6 @@
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Movement
+namespace Treasury.Movement
 {
     public class Pointer : MonoBehaviour
     {

@@ -1,8 +1,7 @@
-using System;
-using Data;
+using Treasury.Data;
 using UnityEngine;
 
-namespace Weapons
+namespace Treasury.Weapons.Basic
 {
     public abstract class RangeWeapon : MonoBehaviour, IShootable, IAnimateiable, IWeapon, IChargeable
     {

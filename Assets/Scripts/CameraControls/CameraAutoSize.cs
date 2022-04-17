@@ -1,10 +1,9 @@
 using System;
-using Data;
+using Treasury.Data;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace CameraControls
+namespace Treasury.CameraControls
 {
     [RequireComponent(typeof(UnityEngine.Camera))]
     public class CameraAutoSize : MonoBehaviour

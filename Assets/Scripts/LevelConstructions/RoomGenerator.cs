@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Data;
-using UnityEditor;
+using Treasury.Data;
+using Treasury.LevelConstructions.Models;
+using Treasury.LevelConstructions.Mono;
 using UnityEngine;
 using UnityEngine.AI;
-using Object = System.Object;
 
-namespace LevelConstructions
+namespace Treasury.LevelConstructions
 {
     public class RoomGenerator
     {

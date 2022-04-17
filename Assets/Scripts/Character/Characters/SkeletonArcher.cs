@@ -1,9 +1,9 @@
 using System.Collections;
-using Character.Basic;
+using Treasury.Character.Basic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Character.Characters
+namespace Treasury.Character.Characters
 {
     public class SkeletonArcher : Character.Basic.Character, IAI
     {

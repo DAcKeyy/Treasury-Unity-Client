@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class SideBehaviour : MonoBehaviour
+namespace Treasury.LevelConstructions.Mono
 {
-    public void RePaint(Material newMaterial)
+    public class SideBehaviour : MonoBehaviour
     {
-        GetComponent<Renderer>().material = newMaterial;
+        public void RePaint(Material newMaterial)
+        {
+            GetComponent<Renderer>().material = newMaterial;
+        }
     }
 }

@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using LevelConstructions;
-using Unity.Collections;
+using Treasury.LevelConstructions.Models;
 using UnityEditor;
 using UnityEngine;
 
-namespace Data
+namespace Treasury.Data
 {
     [Serializable]
     [CreateAssetMenu(fileName = "New Room", menuName = "Game/Room")]

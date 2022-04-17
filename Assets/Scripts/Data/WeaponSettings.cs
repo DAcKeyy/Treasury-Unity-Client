@@ -1,8 +1,8 @@
 using System;
+using Treasury.Weapons.Basic;
 using UnityEngine;
-using Weapons;
 
-namespace Data
+namespace Treasury.Data
 {
     [CreateAssetMenu(fileName = "New Weapon", menuName = "Game/Weapon")]
     [Serializable]

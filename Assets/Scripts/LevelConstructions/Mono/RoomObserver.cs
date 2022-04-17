@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using Character.Characters;
-using Data;
+using Treasury.Character.Characters;
+using Treasury.Data;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
-namespace LevelConstructions.Mono
+namespace Treasury.LevelConstructions.Mono
 {
     public class RoomObserver : MonoBehaviour
     {

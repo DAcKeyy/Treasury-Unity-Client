@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace UI
+namespace Treasury.UI
 {
     public class Billboard : MonoBehaviour
     {

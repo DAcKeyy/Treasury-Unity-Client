@@ -12,4 +12,4 @@ EditorBuildSettings:
     path: Assets/Scenes/Treasury Dungeon/Treasury Dungeon.unity
     guid: 750e0c96300dfa94fb3b75fb0e564fde
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: a081c8605f503084aa0ecadda6092144, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: dded07052d85e5d4d815e931c5d629bb, type: 2}

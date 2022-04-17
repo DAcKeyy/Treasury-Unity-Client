@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace UI
+namespace Treasury.UI
 {
     public class Counter : MonoBehaviour
     {

@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
-using Data;
+using Treasury.Data;
+using Treasury.Weapons;
 using UnityEngine;
 using UnityEngine.AI;
-using Weapons;
 
-namespace Character.Basic
+namespace Treasury.Character.Basic
 {
     [RequireComponent(typeof(CapsuleCollider))]
     [RequireComponent(typeof(CharacterVision))]

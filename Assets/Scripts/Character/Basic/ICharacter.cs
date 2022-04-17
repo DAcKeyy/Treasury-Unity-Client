@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Character.Basic
+namespace Treasury.Character.Basic
 {
     public interface ICharacter
     {

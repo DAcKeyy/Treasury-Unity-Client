@@ -1,7 +1,8 @@
 using System.Collections;
+using Treasury.Weapons.Basic;
 using UnityEngine;
 
-namespace Weapons
+namespace Treasury.Weapons
 {
     [RequireComponent(typeof(BoxCollider))]
     public class Arrow : MonoBehaviour, IBullet

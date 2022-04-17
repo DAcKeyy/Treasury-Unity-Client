@@ -1,4 +1,4 @@
-namespace Data
+namespace Treasury.Data
 {
     public struct UnityTags
     {

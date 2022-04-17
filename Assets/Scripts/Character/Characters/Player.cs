@@ -1,7 +1,7 @@
-using Movement;
+using Treasury.Movement;
 using UnityEngine;
 
-namespace Character.Characters
+namespace Treasury.Character.Characters
 {
     public class Player: Character.Basic.Character
     {

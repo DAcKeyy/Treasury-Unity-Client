@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Data;
+using Treasury.Data;
 using UnityEngine;
 
-namespace LevelConstructions
+namespace Treasury.LevelConstructions.Models
 {
     public class RoomModel
     {

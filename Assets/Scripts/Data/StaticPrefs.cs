@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Data
+namespace Treasury.Data
 {
     public static class StaticPrefs
     {

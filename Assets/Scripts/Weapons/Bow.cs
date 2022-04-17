@@ -1,7 +1,8 @@
-using Data;
+using Treasury.Data;
+using Treasury.Weapons.Basic;
 using UnityEngine;
 
-namespace Weapons
+namespace Treasury.Weapons
 {
     public class Bow : Weapon , IShootable, IAnimateiable, IChargeable, IAutoAimable
     {
