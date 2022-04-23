@@ -1,8 +1,8 @@
+using System;
 using Treasury.Miscellaneous.Optimization.System;
 using Treasury.Controls.VirtualGamepads;
 using UnityEngine.InputSystem;
 using IngameDebugConsole;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.UI;
@@ -15,11 +15,19 @@ namespace Treasury.Controls
     typeof(InputSystemUIInputModule))]
     public class InputManager : Singleton<InputManager>
     {
+        public Action<InputAction.CallbackContext> OnActionTriggered = delegate(InputAction.CallbackContext context) {  };
+        
+        public InputActionAsset GameActionAsset => _gameActionAsset;
+        public InputActionMap CurrentActionMap => _playerInput.currentActionMap;
+        public string CurrentControlScheme => _playerInput.currentControlScheme;
+        public InputAction LastAction;
+        
         [SerializeField] private InputActionAsset _gameActionAsset;
+        private Camera _controlCamera;
         private PlayerInput _playerInput;
         private EventSystem _eventSystem;
         private InputSystemUIInputModule _inputSystemUIInputModule;
-        
+
         private void Awake()
         {
             _playerInput = GetComponentCached<PlayerInput>();
@@ -27,11 +35,19 @@ namespace Treasury.Controls
             _inputSystemUIInputModule = GetComponentCached<InputSystemUIInputModule>();
             
             SwitchActionAsset(_gameActionAsset);
+            SetControlCamera(Camera.main);//TODO: Make by injection
+            
+            _inputSystemUIInputModule.actionsAsset = _gameActionAsset;
+            _playerInput.uiInputModule = _inputSystemUIInputModule;
+            _playerInput.notificationBehavior = PlayerNotifications.InvokeCSharpEvents;
+            _playerInput.onActionTriggered += OnActionTriggered;
+            _playerInput.onActionTriggered += (callback) => { LastAction = callback.action;};
         }
 
         private void Start()
         {
-
+            SwitchActionMap(_playerInput.actions.FindActionMap("3dPerson"));
+            OnActionTriggered += context => Debug.Log(context);
         }
 
         public void SwitchActionMap(InputActionMap map)
@@ -42,6 +58,11 @@ namespace Treasury.Controls
         public void SwitchActionAsset(InputActionAsset asset)
         {
             _playerInput.actions = _gameActionAsset;
+        }
+
+        public void SwitchControlScheme(InputDevice[] newDevices)
+        {
+            _playerInput.SwitchCurrentControlScheme(newDevices);
         }
 
         public void ActivateConsole(bool isEnabled)
@@ -84,14 +105,16 @@ namespace Treasury.Controls
             }
         }
 
-        public void SetActiveCanvas([CanBeNull] Canvas canvas)
+        public void SetControlCamera(Camera newCamera)
         {
-            if (canvas == null)
-            {
-                
-            }
-            
-            
+            _controlCamera = newCamera;
+            _playerInput.camera = _controlCamera;
+        }
+
+        public void EnableCursor(bool enable)
+        {
+            Cursor.visible = enable;
+            Cursor.lockState = enable ? CursorLockMode.Confined : CursorLockMode.Locked;
         }
     }
 }

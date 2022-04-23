@@ -43,10 +43,16 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\UI\Counter.cs" />
      <Compile Include="Assets\Scripts\Character\Basic\CharacterView.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\MonoAllocation.cs" />
      <Compile Include="Assets\Scripts\Weapons\Basic\IWeapon.cs" />
      <Compile Include="Assets\Scripts\LevelConstructions\Models\RoomModel.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\IndexIncrement.cs" />
      <Compile Include="Assets\Scripts\Character\Basic\Character.cs" />
+     <Compile Include="Assets\Scripts\Controls\InputManager.cs" />
      <Compile Include="Assets\Scripts\Weapons\Bow.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Console\TextExtentions.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Threading\UnityMainThreadDispatcher.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\GetInfo.cs" />
      <Compile Include="Assets\Scripts\CameraControls\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Data\CharacterSettings.cs" />
      <Compile Include="Assets\Scripts\Character\Basic\ICharacter.cs" />
@@ -56,30 +62,27 @@
      <Compile Include="Assets\Scripts\LevelConstructions\Mono\BlockBehaviour.cs" />
      <Compile Include="Assets\Scripts\LevelConstructions\Mono\SideBehaviour.cs" />
      <Compile Include="Assets\Scripts\LevelConstructions\RoomGenerator.cs" />
+     <Compile Include="Assets\Scripts\Character\Movement\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\Character\Characters\Player.cs" />
      <Compile Include="Assets\Scripts\Data\RoomData.cs" />
      <Compile Include="Assets\Scripts\Weapons\Arrow.cs" />
+     <Compile Include="Assets\Scripts\Controls\VirtualGamepads\VirtualGamepad.cs" />
      <Compile Include="Assets\Scripts\Character\Basic\CharacterVision.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\MonoCache\GlobalUpdate.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\Singleton.cs" />
      <Compile Include="Assets\Scripts\Data\TagHolder.cs" />
      <Compile Include="Assets\Scripts\CameraControls\CameraAutoSize.cs" />
      <Compile Include="Assets\Scripts\LevelConstructions\Mono\RoomObserver.cs" />
      <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Sugar\Sugar.cs" />
+     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\MonoCache\MonoCache.cs" />
      <Compile Include="Assets\Scripts\Data\StaticPrefs.cs" />
      <Compile Include="Assets\Scripts\LevelConstructions\Models\BlockModel.cs" />
      <Compile Include="Assets\Scripts\Weapons\Basic\Weapon.cs" />
      <Compile Include="Assets\Scripts\Data\WeaponSettings.cs" />
      <Compile Include="Assets\Scripts\Movement\Pointer.cs" />
-     <Compile Include="Assets\Scripts\Controls\VirtualGamepads\VirtualGamepad.cs" />
-     <Compile Include="Assets\Scripts\Controls\InputManager.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\MonoCache\GlobalUpdate.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\IndexIncrement.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\Singleton.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\GetInfo.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\MonoCache\MonoCache.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Optimization\System\MonoAllocation.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Console\TextExtentions.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Sugar\Sugar.cs" />
-     <Compile Include="Assets\Scripts\Miscellaneous\Threading\UnityMainThreadDispatcher.cs" />
+     <Compile Include="Assets\Scripts\Data\Animations\AnimatorParameters.cs" />
+     <Compile Include="Assets\Settings\InputSystem\TreasuryControlls.cs" />
      <None Include="Assets\Resources\TMPro\Shaders\TMPro.cginc" />
      <None Include="Assets\Resources\Animations\Некоторые анимации могут быть в моделях, beCrfl.txt" />
      <None Include="Assets\Resources\TMPro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -995,6 +998,9 @@
      <Reference Include="Unity.Searcher.Editor">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.IK.Editor">
+     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.ProBuilder">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
      </Reference>
@@ -1004,6 +1010,9 @@
      <Reference Include="UnityEditor.UI">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.InputSystem">
+     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
@@ -1012,6 +1021,9 @@
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.IK.Runtime">
+     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
@@ -1033,6 +1045,9 @@
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Animation.Editor">
+     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
@@ -1082,6 +1097,9 @@
      <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.Animation.Runtime">
+     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
@@ -1103,23 +1121,20 @@
      <Reference Include="Unity.SysrootPackage.Editor">
      <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.InputSystem">
-     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.IK.Editor">
-     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.IK.Runtime">
-     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Animation.Editor">
-     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Animation.Runtime">
-     <HintPath>C:\Users\alexa\Projects\Treasury-Unity-Client\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
-     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="IngameDebugConsole.Editor.csproj">
+      <Project>{bed8d0e5-a5f6-ea15-d8c4-48ddd6218093}</Project>
+      <Name>IngameDebugConsole.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="IngameDebugConsole.Runtime.csproj">
+      <Project>{511dc83c-8f48-1140-24e1-d7d2ab51a768}</Project>
+      <Name>IngameDebugConsole.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlayerPrefsEditor.Samples.SampleScene.csproj">
+      <Project>{529faa6c-fdbd-cab7-7720-3d2b73d3ec61}</Project>
+      <Name>Unity.PlayerPrefsEditor.Samples.SampleScene</Name>
+    </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{ade54e01-8412-67d6-41f8-00192b43313a}</Project>
       <Name>NavMeshComponents</Name>
@@ -1128,9 +1143,17 @@
       <Project>{b5998bb3-d352-1c41-748e-105f416215ae}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.PlayerPrefsEditor.EditorResources.csproj">
+      <Project>{c38225f6-4106-d14b-8ed5-e3f536e681dc}</Project>
+      <Name>Unity.PlayerPrefsEditor.EditorResources</Name>
+    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
       <Project>{ad2a8653-1a4a-de76-2a41-7e71a6295d4d}</Project>
       <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlayerPrefsEditor.Editor.csproj">
+      <Project>{5b94e204-2836-bf9e-a2a4-02f9db653031}</Project>
+      <Name>Unity.PlayerPrefsEditor.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
       <Project>{0e3f651f-9fb9-40b3-f24f-832da16e75ba}</Project>
@@ -1139,26 +1162,6 @@
     <ProjectReference Include="PluginsAssemblyDefinition.csproj">
       <Project>{4caf5260-f042-3f96-4dfa-f81e7375996a}</Project>
       <Name>PluginsAssemblyDefinition</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlayerPrefsEditor.Editor.csproj">
-      <Project>{5b94e204-2836-bf9e-a2a4-02f9db653031}</Project>
-      <Name>Unity.PlayerPrefsEditor.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlayerPrefsEditor.EditorResources.csproj">
-      <Project>{c38225f6-4106-d14b-8ed5-e3f536e681dc}</Project>
-      <Name>Unity.PlayerPrefsEditor.EditorResources</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlayerPrefsEditor.Samples.SampleScene.csproj">
-      <Project>{529faa6c-fdbd-cab7-7720-3d2b73d3ec61}</Project>
-      <Name>Unity.PlayerPrefsEditor.Samples.SampleScene</Name>
-    </ProjectReference>
-    <ProjectReference Include="IngameDebugConsole.Editor.csproj">
-      <Project>{bed8d0e5-a5f6-ea15-d8c4-48ddd6218093}</Project>
-      <Name>IngameDebugConsole.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="IngameDebugConsole.Runtime.csproj">
-      <Project>{511dc83c-8f48-1140-24e1-d7d2ab51a768}</Project>
-      <Name>IngameDebugConsole.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
